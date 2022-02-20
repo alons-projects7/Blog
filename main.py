@@ -220,7 +220,4 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    user = User.query.filter_by(id=4).first()
-    db.session.delete(user)
-    db.session.commit()
     app.run()
